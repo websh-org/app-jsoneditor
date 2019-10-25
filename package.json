@@ -1,0 +1,32 @@
+{
+  "description": "Quill rich text editor for WebShell",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/websh-org/app-jsoneditor.git"
+  },
+  "keywords": [
+    "websh",
+    "webshell",
+    "app-jsoneditor"
+  ],
+  "scripts": {
+    "dev": "(cd src; PORT=42004 parcel index.html)",
+    "build": "(rm -rf docs/*; cd src; NODE_ENV=production parcel build index.html --public-url=/app-jsoneditor --out-dir=../docs)",
+    "publish": "npm run build; git add -A; git commit -m publish; git push"
+  },
+  "author": "Zoran Obradović, Ljudmila.org",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/websh-org/app-jsoneditor/issues"
+  },
+  "homepage": "https://websh.org/packages/app-jsoneditor/",
+  "private": true,
+  "dependencies": {
+    "@websh/web-shell-app": "^0.1.1",
+    "jsoneditor": "^7.2.0"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10",
+    "parcel-plugin-static-files-copy": "^2.2.1"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "v": 0,
+  "name": "JSON Editor",
+  "icon": "icon.png",
+  "description": "JSON Editor packaged for WebShell",
+  "version": "1.3.7",
+  "license": "MIT",
+  "homepage": "https://github.com/websh-org/app-jsoneditor#readme",
+  "repository": "https://github.com/websh-org/app-jsoneditor.git",
+  "api": {
+    "file": {
+      "formats": {
+        "json": {
+          "label": "JSON File",
+          "type": "application/json",
+          "extension": "json",
+          "encoding": "text",
+          "new": true,
+          "open": true,
+          "save": true
+        }
+      }
+    }
+  }
+}
