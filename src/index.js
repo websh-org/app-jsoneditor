@@ -13,7 +13,7 @@ WebShellApp.manifest(manifest)
     return "OK";
   })
   .command('file-save', ({ format, extension }) => {
-    return { content: editor.get(), type:"application/json" }
+    return { content: JSON.stringify(editor.get(),null,2), type:"application/json" }
   })
   .command('file-new', function ({ format }) {
     editor.set({});
