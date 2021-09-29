@@ -23,7 +23,7 @@
   "private": true,
   "dependencies": {
     "@websh/web-shell-app": "^0.1.1",
-    "jsoneditor": "^7.2.0"
+    "jsoneditor": "^9.5.6"
   },
   "devDependencies": {
     "cssnano": "^4.1.10",
